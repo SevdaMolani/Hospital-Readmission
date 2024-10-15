@@ -29,7 +29,7 @@ To run this project, you need Python 3.7 or higher. Follow these steps to set up
    pip install -r requirements.txt
 4. To start the FastAPI application, run the following command:
    uvicorn app:app --host 0.0.0.0 --port 8080
-   You can then access the API at http://127.0.0.1:8000.
+   You can then access the API at http://127.0.0.1:8080.
 
 ## API Endpoints
 Health Check
