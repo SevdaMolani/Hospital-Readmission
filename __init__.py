@@ -21,3 +21,9 @@ from .EDA import (
 from .model_training import (
     modeling_pipeline
 )
+
+# Define __all__ for cleaner imports
+__all__ = [
+    "perform_eda",
+    "modeling_pipeline"
+]
