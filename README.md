@@ -62,9 +62,9 @@ Response:
     "probability": 0.8
 }
 
-Testing
+## Testing
 To run tests for the application, make sure you have pytest installed. You can run the tests using the following command:
 pytest tests/
 
-Logging
+## Logging
 The application logs important events to a file named app.log. This includes health check requests, prediction requests, and any errors that may occur during processing.
