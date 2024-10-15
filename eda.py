@@ -15,8 +15,6 @@ Original file is located at
 *   Generate a report summarizing your findings.
 """
 
-# !pip install pandas-profiling
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
