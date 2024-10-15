@@ -156,3 +156,7 @@ def perform_eda(file_path):
 
     # Save the cleaned dataset
     data.to_csv('df_eda.csv', index=False)
+
+
+
+perform_eda('/content/hospital_readmissions.csv')
