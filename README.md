@@ -11,8 +11,6 @@ This project provides a FastAPI application for predicting hospital readmissions
   - [Predict Readmission](#predict-readmission)
 - [Testing](#testing)
 - [Logging](#logging)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -33,4 +31,40 @@ To run this project, you need Python 3.7 or higher. Follow these steps to set up
    uvicorn app:app --host 0.0.0.0 --port 8080
    You can then access the API at http://127.0.0.1:8000.
 
+## API Endpoints
+Health Check
+Endpoint: /health
+Method: GET
+Description: Checks the health of the API.
+Response: {
+  "status": "OK"
+}
 
+Predict Readmission
+Endpoint: /predict
+Method: POST
+Request Body:
+{
+    "Age": 70,
+    "Gender": "Male",
+    "Admission_Type": "Emergency",
+    "Diagnosis": "Heart Failure",
+    "Num_Lab_Procedures": 5,
+    "Num_Medications": 10,
+    "Num_Outpatient_Visits": 2,
+    "Num_Inpatient_Visits": 1,
+    "Num_Emergency_Visits": 3,
+    "Num_Diagnoses": 2
+}
+Response:
+{
+    "prediction": 1,
+    "probability": 0.8
+}
+
+Testing
+To run tests for the application, make sure you have pytest installed. You can run the tests using the following command:
+pytest tests/
+
+Logging
+The application logs important events to a file named app.log. This includes health check requests, prediction requests, and any errors that may occur during processing.
